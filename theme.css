@@ -1,0 +1,147 @@
+.default__theme {
+    --default-text-color: 0, 0, 0;
+    --default-radius: 0.375rem;
+    --default-border-color: 199, 210, 254;
+    --default-background-color: 255, 255, 255;
+    --default-focus-color: 110, 231, 183;
+    --default-ring-color: rgba(167, 243, 208, 0.5);
+    --default-ring-width: 3px;
+    --default-checkbox-color: 167, 243, 208;
+    --default-checkbox-radius: 0px;
+    --default-radio-color: 167, 243, 208;
+    --default-radio-radius: 99999px;
+    --app-background-color: 249, 250, 251
+}
+
+.form-input__tempestive {
+    border-radius: var(--form-input-radius, var(--default-radius));
+    border-color: rgba(var(--form-input-border-color, var(--default-border-color)), 1);
+    background-color: rgba(var(--form-input-background-color, var(--default-background-color)), 1)
+}
+
+.form-input__tempestive:focus {
+    --tw-ring-color: var(--custom-ring-color, var(--default-ring-color));
+    --tw-ring-offset-width: var(--custom-ring-width, var(--default-ring-width));
+    border-color: rgba(var(--form-input-focus-color, var(--default-focus-color)), 1);
+    box-shadow: 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-color);
+}
+
+
+.form-textarea__tempestive {
+    border-radius: var(--form-textarea-radius, var(--default-radius));
+    border-color: rgba(var(--form-textarea-border-color, var(--default-border-color)), 1);
+    background-color: rgba(var(--form-textarea-background-color, var(--default-background-color)), 1)
+}
+
+.form-textarea__tempestive:focus {
+    --tw-ring-color: var(--custom-ring-color, var(--default-ring-color));
+    --tw-ring-offset-width: var(--custom-ring-width, var(--default-ring-width));
+    border-color: rgba(var(--form-textarea-focus-color, var(--default-focus-color)), 1);
+    box-shadow: 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-color);
+}
+
+
+.form-select__tempestive {
+    border-radius: var(--form-select-radius, var(--default-radius));
+    border-color: rgba(var(--form-select-border-color, var(--default-border-color)), 1);
+    background-color: rgba(var(--form-select-background-color, var(--default-background-color)), 1)
+}
+
+.form-select__tempestive:focus {
+    --tw-ring-color: var(--custom-ring-color, var(--default-ring-color));
+    --tw-ring-offset-width: var(--custom-ring-width, var(--default-ring-width));
+    border-color: rgba(var(--form-select-focus-color, var(--default-focus-color)), 1);
+    box-shadow: 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-color);
+}
+
+
+.form-checkbox__tempestive {
+    border-radius: var(--checkbox-radius, var(--default-checkbox-radius));
+    border-color: rgba(var(--checkbox-border-color), 1);
+    background-color: rgba(var(--checkbox-background-color, transparent), 1);
+    color: rgba(var(--checkbox-color), 1);
+
+}
+
+.form-checkbox__tempestive:focus {
+    --tw-ring-color: var(--custom-ring-color, var(--default-ring-color));
+    --tw-ring-offset-width: var(--custom-ring-width, var(--default-ring-width));
+    border-color: rgba(var(--checkbox-focus-color), 1);
+    box-shadow: 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-color);
+}
+
+
+.form-radio__tempestive {
+    border-radius: var(--radio-radius, var(--default-radio-radius));
+    border-color: rgba(var(--radio-border-color), 1);
+    background-color: rgba(var(--radio-background-color, transparent), 1);
+    color: rgba(var(--radio-color), 1);
+
+}
+
+.form-radio__tempestive:focus {
+    --tw-ring-color: var(--custom-ring-color, var(--default-ring-color));
+    --tw-ring-offset-width: var(--custom-ring-width, var(--default-ring-width));
+    border-color: rgba(var(--radio-focus-color), 1);
+    box-shadow: 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-color);
+}
+
+
+.button__tempestive {
+    border-radius: var(--button-radius, var(--default-radius));
+    background-color: rgba(var(--button-background-color), 1);
+    border-color: rgba(var(--button-border-color), 1);
+    color: rgba(var(--button-text-color), 1);
+}
+
+.button__tempestive:hover {
+    background-color: rgba(var(--button-hover-color), 1);
+    color: rgba(var(--button-hover-text-color), 1);
+}
+
+.button__tempestive:focus {
+    --tw-ring-color: var(--custom-ring-color, var(--default-ring-color));
+    --tw-ring-offset-width: var(--custom-ring-width, var(--default-ring-width));
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    border-color: rgba(var(--button-focus-color), 1);
+    box-shadow: 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-color);
+}
+
+.list-item__tempestive,
+.list-item-main-content__tempestive{
+    border-radius: var(--list-item-radius, var(--default-radius));
+    border-color: rgba(var(--list-item-border-color, var(--default-border-color)), 1);
+    background-color: rgba(var(--list-item-background-color, var(--default-background-color)), 1)
+}
+
+.panel__tempestive{
+    border-radius: var(--panel-radius, var(--default-radius));
+    /* border-color: rgba(var(--form-select-border-color, var(--default-border-color)), 1); */
+    background-color: rgba(var(--panel-background-color, var(--default-background-color)), 1);
+    color: rgba(var(--panel-text-color, var(--default-text-color)), 1)
+}
+
+.th__tempestive {
+    color: rgba(var(--th-text-color, var(--default-text-color)), 1);
+    border-color: rgba(var(--th-border-color, var(--default-border-color)), 1);
+    background-color: rgba(var(--th-background-color, var(--default-background-color)), 1)
+}
+
+.tbody__tempestive {
+    color: rgba(var(--tbody-text-color, var(--default-tbody-color)), 1);
+    background-color: rgba(var(--tbody-background-color, var(--default-tbody-color)), 1)
+}
+
+
+.link__tempestive {
+    color: rgba(var(--link-text-color), 1);
+}
+
+.link__tempestive:hover {
+    color: rgba(var(--link-hover-text-color), 1);
+}
+
+.link__tempestive:focus {
+    color: rgba(var(--link-focus-text-color), 1);
+}
